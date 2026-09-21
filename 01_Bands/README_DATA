@@ -1,0 +1,45 @@
+# Landsat-5 TM Input Data
+
+The study used Landsat-5 Thematic Mapper (TM) Collection 2 Level 2 Surface Reflectance data obtained from the U.S. Geological Survey (USGS) EarthExplorer.
+
+## Scene used
+
+Scene ID:
+
+LT05_L2SP_140045_19910320_20200915_02_T1_SR
+
+Acquisition date:
+
+20 March 1991
+
+Spatial resolution:
+
+30 m
+
+## Bands used
+
+The following six reflective bands were used in the classification:
+
+- B1 – Blue
+- B2 – Green
+- B3 – Red
+- B4 – Near Infrared (NIR)
+- B5 – Shortwave Infrared 1 (SWIR 1)
+- B7 – Shortwave Infrared 2 (SWIR 2)
+
+The study-area raster filenames were:
+
+- L5TM_19910320_AOI_SR_B1.tif
+- L5TM_19910320_AOI_SR_B2.tif
+- L5TM_19910320_AOI_SR_B3.tif
+- L5TM_19910320_AOI_SR_B4.tif
+- L5TM_19910320_AOI_SR_B5.tif
+- L5TM_19910320_AOI_SR_B7.tif
+
+## Data availability
+
+The original Landsat-5 TM scene is publicly available from USGS EarthExplorer using the scene ID given above.
+
+The full study-area GeoTIFF rasters are not stored directly in this GitHub repository because of repository/browser file-size limitations.
+
+These six bands were the input raster datasets used for the ArcMap and QGIS/SCP classifications reported in the manuscript.
