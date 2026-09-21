@@ -1,0 +1,92 @@
+THIRD-PARTY SOFTWARE ATTRIBUTION
+
+Repository:
+IronOre_Landsat_Classification
+
+This repository accompanies the manuscript:
+"A Comparative Evaluation of Potential Iron Ore Zone from Satellite Data using Machine Learning and Conventional Approaches"
+
+The classifications reported in the study were performed using third-party GIS software. The authors did not develop the underlying classification algorithms.
+
+1. ArcGIS Desktop / ArcMap / ArcPy Spatial Analyst
+--------------------------------------------------
+Developer: Esri
+
+Use in this study:
+Maximum Likelihood Classification (MLC), implemented through ArcMap 10.8.2 Spatial Analyst.
+
+The file:
+04_Code/01_MLC_ArcGIS.py
+
+documents the public ArcPy MLClassify tool call and the study-specific parameter settings.
+
+Esri's internal Maximum Likelihood Classification source code is proprietary and is NOT copied, redistributed, or claimed as author-developed code in this repository.
+
+ArcGIS and ArcPy remain subject to Esri's software licence terms.
+
+2. Semi-Automatic Classification Plugin (SCP)
+---------------------------------------------
+Developer: Luca Congedo
+
+Use in this study:
+Spectral Angle Mapping (SAM), Random Forest (RF), and Support Vector Machine (SVM) classification through QGIS.
+
+Project repository:
+https://github.com/semiautomaticgit/SemiAutomaticClassificationPlugin
+
+Licence:
+GNU General Public License, version 3 or later (GPL-3.0-or-later).
+
+3. Remotior Sensus
+------------------
+Developer: Luca Congedo
+
+Relationship to SCP:
+SCP uses the open-source Remotior Sensus classification backend for several classification operations, including SAM, RF, and SVM.
+
+Project repository:
+https://github.com/semiautomaticgit/remotior_sensus
+
+Documentation:
+https://remotior-sensus.readthedocs.io/
+
+Licence:
+GNU General Public License, version 3 or later (GPL-3.0-or-later).
+
+4. scikit-learn
+---------------
+Use:
+Machine-learning functionality underlying Random Forest and Support Vector Machine operations in the SCP / Remotior Sensus software stack.
+
+Project:
+https://scikit-learn.org/
+
+Licence:
+BSD 3-Clause License.
+
+5. Project-specific files
+-------------------------
+The files:
+- 04_Code/01_MLC_ArcGIS.py
+- 04_Code/02_SAM_SCP.py
+- 04_Code/03_RF_SCP.py
+- 04_Code/04_SVM_SCP.py
+
+are concise project-specific representations of the software tool/API calls and study settings used in the manuscript.
+
+They are provided for research transparency and code availability.
+
+They are NOT presented as:
+- newly developed classification algorithms;
+- copies of proprietary ArcGIS source code; or
+- replacements for the complete SCP, Remotior Sensus, scikit-learn, or ArcGIS software packages.
+
+All third-party software remains subject to its own copyright and licence terms.
+
+6. Data
+-------
+The Landsat-5 TM imagery used in the study was obtained from the U.S. Geological Survey (USGS). Any redistribution or reuse remains subject to applicable USGS data terms.
+
+Training polygons and study-area files supplied in this repository are provided as supporting research data for the manuscript.
+
+This attribution file does not replace the licence terms of any third-party software or external dataset.
